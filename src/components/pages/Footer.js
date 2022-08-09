@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { FiPhoneCall } from "react-icons/fi";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaWhatsapp } from "react-icons/fa";
+import { BiMap } from "react-icons/bi";
 import Image from "../../images/janus-softwares.png";
 
 const MainDiv = styled.div`
@@ -64,6 +65,9 @@ const Footer = () => {
     height: "150px",
     width: "50%",
   };
+  const aStyle = {
+    textDecoration: "none",
+  }
   return (
     <MainDiv>
       <Helper>
@@ -72,16 +76,23 @@ const Footer = () => {
           mission to help companies extend their business with the help of
           technology. Founded in 2021, we have satisfied all our clients.
           <div>
-            <img src={Image} style={styles} />
+            <img src={Image} style={styles} alt="img"/>
           </div>
         </Left>
         <Right>
           <Heading>About Us</Heading>
-          <P>
-            Address - Registered Office – Janus Softwares – 104/105, A Wing,
-            Manas Residency, Veer Savarkar Marg, Teen Petrol Pump, Thane(W),
-            Maharashtra, India – 400602
-          </P>
+          <a
+            target="_blank"
+            href="https://www.google.com/maps/place/Janus+Softwares/@19.1928522,72.9705314,15z/data=!4m5!3m4!1s0x0:0x8a1b0b9208eec948!8m2!3d19.1928522!4d72.9705314?shorturl=1"
+            rel="noreferrer"
+            style={aStyle}
+          >
+            <P>
+              Address <BiMap /> - Registered Office – Janus Softwares – 104/105, A Wing,
+              Manas Residency, Veer Savarkar Marg, Teen Petrol Pump, Thane(W),
+              Maharashtra, India – 400602
+            </P>
+          </a>
           <Heading>Contact</Heading>
           <P>
             Anurag Baheti - <Color>CEO</Color>
@@ -104,7 +115,7 @@ const Footer = () => {
           </Span>
         </Right>
       </Helper>
-      <Rights>Copyright © 2022 Constbase. All Rights Reserved</Rights>
+      <Rights>Copyright © 2022 Janus Softwares. All Rights Reserved</Rights>
     </MainDiv>
   );
 };
