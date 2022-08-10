@@ -14,7 +14,7 @@ const MainHeading = styled.h1`
   color: #fff;
   font-size: 5rem;
   margin: 0;
-  font-family: Montserrat;
+  font-family: "Lora", sans-serif;
 `;
 const Box = styled.div`
   width: 50%;
@@ -27,7 +27,7 @@ const Box = styled.div`
 `;
 const Paragraph = styled.p`
   color: #fff;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lora", sans-serif;
   font-size: 1.5rem;
 `;
 

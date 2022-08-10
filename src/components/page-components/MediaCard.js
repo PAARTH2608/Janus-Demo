@@ -24,6 +24,7 @@ const MediaCard = (props) => {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
+            fontFamily: "Lora, sans-serif",
           }}
         >
           {props.name}
@@ -32,7 +33,9 @@ const MediaCard = (props) => {
         <Typography
           variant="body2"
           color="text.secondary"
-          sx={{ color: "#fff" }}
+          sx={{ color: "#fff",
+            fontFamily: "Lora, sans-serif",
+        }}
         >
           {props.description}
         </Typography>

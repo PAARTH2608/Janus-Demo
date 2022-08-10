@@ -26,10 +26,12 @@ const MediumText = styled.h3`
   font-weight: 300;
   margin: 0;
   padding: 0;
+  font-family: "Lora", sans-serif;
 `;
 const LargeText = styled.h1`
   color: #fff;
   font-size: 3rem;
+  font-family: "Lora", sans-serif;
 `;
 
 const RightDiv = styled.div`

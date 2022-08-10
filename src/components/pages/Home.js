@@ -33,11 +33,11 @@ const HeadingOne = styled.h1`
   color: #fff;
   font-size: 5rem;
   margin: 0;
-  font-family: Montserrat;
+  font-family: "Lora", sans-serif;
 `;
 const HeadingTwo = styled.h2`
   color: #fff;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lora", sans-serif;
   font-weight: 300;
 `;
 

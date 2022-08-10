@@ -25,6 +25,7 @@ const Left = styled.div`
   width: 40%;
   font-size: 1.3rem;
   color: #fff;
+  font-family: "Lora", sans-serif;
 `;
 const Right = styled.div`
   height: 80%;
@@ -50,12 +51,14 @@ const Span = styled.span`
 const Heading = styled.h1`
   color: #fff;
   margin-bottom: 0.2rem;
+  font-family: "Lora", sans-serif;
 `;
 const P = styled.p`
   color: #fff;
   font-size: 1.2rem;
   margin: 0;
   padding: 0;
+  font-family: "Lora", sans-serif;
 `;
 const Color = styled.span`
   color: turquoise;

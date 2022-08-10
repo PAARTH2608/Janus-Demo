@@ -9,7 +9,6 @@ const Service = props => {
     <Card sx={{ maxWidth: 345,
     backgroundColor: '#2b2b2b',
     color: '#fff',
-    // height: '90%',
     }}>
       <CardActionArea>
         <CardContent>
@@ -19,12 +18,13 @@ const Service = props => {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'flex-start',
+                fontFamily: 'Lora, sans-serif',
             }}
           >
             {props.icon}&nbsp;
             {props.name}
           </Typography>
-          <Typography variant="body2" color="#fff">
+          <Typography variant="body2" color="#fff" fontFamily={"Lora, sans-serif"} >
             {props.description}
           </Typography>
         </CardContent>
