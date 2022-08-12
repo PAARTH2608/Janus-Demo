@@ -9,12 +9,22 @@ const MainDiv = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+
+  @media (max-width: 900px) {
+    align-items: flex-start;
+    padding-top: 2rem;
+    height: 105vh;
+  }
 `;
 const MainHeading = styled.h1`
   color: #fff;
   font-size: 5rem;
   margin: 0;
   font-family: "Lora", sans-serif;
+
+  @media (max-width: 1200px) {
+    font-size: 3rem;
+  }
 `;
 const Box = styled.div`
   width: 50%;
@@ -24,11 +34,22 @@ const Box = styled.div`
   justify-content: space-between;
   align-items: center;
   text-align: center;
+
+  @media (max-width: 900px) {
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+  }
 `;
 const Paragraph = styled.p`
   color: #fff;
   font-family: "Lora", sans-serif;
   font-size: 1.5rem;
+
+  @media (max-width: 900px) {
+    font-size: 1.6rem;
+  }
 `;
 
 const Technologies = () => {

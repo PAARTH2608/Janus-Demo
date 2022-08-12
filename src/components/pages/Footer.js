@@ -14,6 +14,10 @@ const MainDiv = styled.div`
   justify-content: space-around;
   align-items: center;
   background-color: #2b2b2b;
+
+  @media (max-width: 1200px) {
+    height: 40vh;
+  }
 `;
 const Helper = styled.div`
   display: flex;
@@ -26,6 +30,10 @@ const Left = styled.div`
   font-size: 1.3rem;
   color: #fff;
   font-family: "Lora", sans-serif;
+
+  @media (max-width: 1200px) {
+    font-size: 1.2rem;
+  }
 `;
 const Right = styled.div`
   height: 80%;
@@ -34,10 +42,19 @@ const Right = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  
+  @media (max-width: 1200px) {
+    width: 50%;
+    justisfy-content: center;
+  }
 `;
 const Rights = styled.div`
   color: #fff;
   font-size: 1.2rem;
+
+  @media (max-width: 1200px) {
+    font-size: 1.1rem;
+  }
 `;
 const Span = styled.span`
   color: turquoise;
@@ -52,6 +69,10 @@ const Heading = styled.h1`
   color: #fff;
   margin-bottom: 0.2rem;
   font-family: "Lora", sans-serif;
+
+  @media (max-width: 1200px) {
+    font-size: 1.2rem;
+  }
 `;
 const P = styled.p`
   color: #fff;
@@ -59,6 +80,10 @@ const P = styled.p`
   margin: 0;
   padding: 0;
   font-family: "Lora", sans-serif;
+
+  @media (max-width: 1200px) {
+    font-size: 1.1rem;
+  }
 `;
 const Color = styled.span`
   color: turquoise;
@@ -66,7 +91,7 @@ const Color = styled.span`
 const Footer = () => {
   const styles = {
     height: "150px",
-    width: "50%",
+    width: "35%",
   };
   const aStyle = {
     textDecoration: "none",
@@ -75,12 +100,12 @@ const Footer = () => {
     <MainDiv>
       <Helper>
         <Left>
-          Janus <Color>&nbsp;Softwares&nbsp;</Color> is a tech company with a
-          mission to help companies extend their business with the help of
-          technology. Founded in 2021, we have satisfied all our clients.
           <div>
             <img src={Image} style={styles} alt="img"/>
           </div>
+          Janus <Color>&nbsp;Softwares&nbsp;</Color> is a tech company with a
+          mission to help companies extend their business with the help of
+          technology. Founded in 2021, we have satisfied all our clients.
         </Left>
         <Right>
           <Heading>About Us</Heading>

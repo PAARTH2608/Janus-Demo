@@ -11,6 +11,13 @@ const MainDiv = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+  }
 `;
 const LeftDiv = styled.div`
   height: 100vh;
@@ -22,6 +29,13 @@ const LeftDiv = styled.div`
   justify-content: center;
   align-items: flex-start;
   padding-left: 4rem;
+
+  @media (max-width: 1200px) {
+    width: 70%;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    width: 100%;
+  }
 `;
 const MediumText = styled.h3`
   color: #fff;
@@ -30,11 +44,19 @@ const MediumText = styled.h3`
   margin: 0;
   padding: 0;
   font-family: "Lora", sans-serif;
+
+  @media (max-width: 1200px) {
+    font-size: 1.6rem;
+  }
 `;
 const LargeText = styled.h1`
   color: #fff;
   font-size: 3rem;
   font-family: "Lora", sans-serif;
+
+  @media (max-width: 1200px) {
+    font-size: 2.5rem;
+  }
 `;
 
 const RightDiv = styled.div`
@@ -45,8 +67,19 @@ const RightDiv = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 4rem;
+
+  @media (max-width: 1200px) {
+    width: 100%;
+    padding-right: 0;
+    padding: 0;
+  }
 `;
-const Image = styled.img``;
+const Image = styled.img`
+  @media (max-width: 1200px) {
+    width: 50%;
+    margin: auto;
+  }
+`;
 const Upper = styled.div`
   height: 20vh;
   width: 100%;
@@ -54,6 +87,10 @@ const Upper = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+
+  @media (max-width: 1200px) {
+    height: 10vh;
+  }
 `;
 const Lower = styled.div`
   height: 20vh;

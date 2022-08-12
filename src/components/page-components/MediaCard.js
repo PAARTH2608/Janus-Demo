@@ -10,9 +10,18 @@ const MediaCard = (props) => {
   const styles = {
     textDecoration: "none",
   }
+  const styles1 = {
+    backgroundColor: "#2b2b2b",
+    marginBottom: "2rem",
+    width: "48%",
+    margin: "0.5rem 0.5rem",
+    "@media (max-width: 900px)": {
+      maxWidth: "49%",
+    }
+  }
   return (
     <Card
-      sx={{ maxWidth: 465, backgroundColor: "#2B2B2B", marginBottom: "2rem" }}
+      sx={styles1}
     >
       <CardContent>
         <Typography

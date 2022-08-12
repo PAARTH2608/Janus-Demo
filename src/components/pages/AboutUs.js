@@ -8,6 +8,12 @@ const MainDiv = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 const LeftDiv = styled.div`
   height: 100vh;
@@ -19,6 +25,13 @@ const LeftDiv = styled.div`
   justify-content: center;
   align-items: flex-start;
   padding-left: 4rem;
+
+  @media (max-width: 1200px) {
+    width: 100%;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    justify-content: flex-start;
+  }
 `;
 const MediumText = styled.h3`
   color: #fff;
@@ -27,11 +40,19 @@ const MediumText = styled.h3`
   margin: 0;
   padding: 0;
   font-family: "Lora", sans-serif;
+
+  @media (max-width: 1200px) {
+    font-size: 1.6rem;
+  }
 `;
 const LargeText = styled.h1`
   color: #fff;
   font-size: 3rem;
   font-family: "Lora", sans-serif;
+
+  @media (max-width: 1200px) {
+    font-size: 3rem;
+  }
 `;
 
 const RightDiv = styled.div`
@@ -42,8 +63,20 @@ const RightDiv = styled.div`
   justify-content: center;
   align-items: center;
   padding-right: 4rem;
+
+  @media (max-width: 1200px) {
+    width: 80%;
+    padding-right: 0;
+    padding-top: 2rem;
+    align-items: center;
+    justify-content: flex-start;
+  }
 `;
-const Image = styled.img``;
+const Image = styled.img`
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
+`;
 
 const AboutUs = () => {
   return (
