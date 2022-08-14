@@ -10,6 +10,10 @@ const MainDiv = styled.div`
   justify-content: flex-start;
   align-items: center;
 
+  @media (max-width: 900px) {
+    margin-top: 3rem;
+    height: 110vh;
+  }
   @media (max-width: 650px) {
     align-items: flex-start;
     padding-top: 2rem;
