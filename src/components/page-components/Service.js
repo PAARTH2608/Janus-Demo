@@ -5,10 +5,16 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
 const Service = props => {
+  
   return (
     <Card sx={{ maxWidth: 345,
     backgroundColor: '#2b2b2b',
     color: '#fff',
+    "@media (max-width: 650px)": {
+      width: '100%',
+      height: '200px',
+      margin: '1.3rem 0.5rem',
+    }
     }}>
       <CardActionArea>
         <CardContent>
@@ -19,6 +25,9 @@ const Service = props => {
                 alignItems: 'center',
                 justifyContent: 'flex-start',
                 fontFamily: 'Lora, sans-serif',
+                "@media (max-width: 650px)": {
+                  fontSize: '1rem',
+                }
             }}
           >
             {props.icon}&nbsp;

@@ -32,6 +32,9 @@ const LeftDiv = styled.div`
     padding-top: 2rem;
     justify-content: flex-start;
   }
+  @media (max-width: 650px) {
+    height: 50vh;
+  }
 `;
 const MediumText = styled.h3`
   color: #fff;
@@ -44,6 +47,9 @@ const MediumText = styled.h3`
   @media (max-width: 1200px) {
     font-size: 1.6rem;
   }
+  @media (max-width: 650px){
+    font-size: 1rem;
+  }
 `;
 const LargeText = styled.h1`
   color: #fff;
@@ -52,6 +58,9 @@ const LargeText = styled.h1`
 
   @media (max-width: 1200px) {
     font-size: 3rem;
+  }
+  @media (max-width: 650px){
+    font-size: 1.5rem;
   }
 `;
 
@@ -70,6 +79,9 @@ const RightDiv = styled.div`
     padding-top: 2rem;
     align-items: center;
     justify-content: flex-start;
+  }
+  @media (max-width: 650px) {
+    height: 20vh;
   }
 `;
 const Image = styled.img`

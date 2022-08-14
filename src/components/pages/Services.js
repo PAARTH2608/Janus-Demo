@@ -48,6 +48,9 @@ const MediumText = styled.h3`
   @media (max-width: 1200px) {
     font-size: 1.6rem;
   }
+  @media (max-width: 650px) {
+    font-size: 1rem;
+  }
 `;
 const LargeText = styled.h1`
   color: #fff;
@@ -56,6 +59,9 @@ const LargeText = styled.h1`
 
   @media (max-width: 1200px) {
     font-size: 2.5rem;
+  }
+  @media (max-width: 650px) {
+    font-size: 1.5rem;
   }
 `;
 
@@ -91,6 +97,9 @@ const Upper = styled.div`
   @media (max-width: 1200px) {
     height: 10vh;
   }
+  @media (max-width: 650px) {
+    margin: 1rem;
+  }
 `;
 const Lower = styled.div`
   height: 20vh;
@@ -99,6 +108,11 @@ const Lower = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+
+  @media (max-width: 650px) {
+    height: 35vh;
+    justify-content: space-between;
+  }
 `;
 
 const Services = () => {
@@ -123,7 +137,7 @@ const Services = () => {
           })}
         </Upper>
         <Lower>
-        {Data.slice(2, 4).map((item) => {
+          {Data.slice(2, 4).map((item) => {
             return (
               <Service
                 key={item.id}

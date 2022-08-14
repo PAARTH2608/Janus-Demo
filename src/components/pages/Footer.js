@@ -34,6 +34,9 @@ const Left = styled.div`
   @media (max-width: 1200px) {
     font-size: 1.2rem;
   }
+  @media (max-width: 650px) {
+    font-size: 0.8rem;
+  }
 `;
 const Right = styled.div`
   height: 80%;
@@ -42,7 +45,7 @@ const Right = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  
+
   @media (max-width: 1200px) {
     width: 50%;
     justisfy-content: center;
@@ -55,6 +58,9 @@ const Rights = styled.div`
   @media (max-width: 1200px) {
     font-size: 1.1rem;
   }
+  @media (max-width: 650px) {
+    font-size: 0.8rem;
+  }
 `;
 const Span = styled.span`
   color: turquoise;
@@ -64,6 +70,10 @@ const Span = styled.span`
   justify-content: space-between;
   width: 50%;
   margin-top: 1rem;
+
+  @media (max-width: 650px) {
+    font-size: 1rem;
+  }
 `;
 const Heading = styled.h1`
   color: #fff;
@@ -72,6 +82,9 @@ const Heading = styled.h1`
 
   @media (max-width: 1200px) {
     font-size: 1.2rem;
+  }
+  @media (max-width: 650px) {
+    font-size: 1rem;
   }
 `;
 const P = styled.p`
@@ -84,6 +97,9 @@ const P = styled.p`
   @media (max-width: 1200px) {
     font-size: 1.1rem;
   }
+  @media (max-width: 650px) {
+    font-size: 0.8rem;
+  }
 `;
 const Color = styled.span`
   color: turquoise;
@@ -92,16 +108,29 @@ const Footer = () => {
   const styles = {
     height: "150px",
     width: "35%",
+    "@media (max-width: 650px)": {
+      height: "100px",
+      width: "100%",
+    },
+  };
+  const styles2 = {
+    "@media (max-width: 650px)": {
+      height: "100%",
+      width: "0%",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+    },
   };
   const aStyle = {
     textDecoration: "none",
-  }
+  };
   return (
     <MainDiv>
       <Helper>
         <Left>
-          <div>
-            <img src={Image} style={styles} alt="img"/>
+          <div style={styles2}>
+            <img src={Image} style={styles} alt="img" />
           </div>
           Janus <Color>&nbsp;Softwares&nbsp;</Color> is a tech company with a
           mission to help companies extend their business with the help of
@@ -116,9 +145,9 @@ const Footer = () => {
             style={aStyle}
           >
             <P>
-              Address <BiMap /> - Registered Office – Janus Softwares – 104/105, A Wing,
-              Manas Residency, Veer Savarkar Marg, Teen Petrol Pump, Thane(W),
-              Maharashtra, India – 400602
+              Address <BiMap /> - Registered Office – Janus Softwares – 104/105,
+              A Wing, Manas Residency, Veer Savarkar Marg, Teen Petrol Pump,
+              Thane(W), Maharashtra, India – 400602
             </P>
           </a>
           <Heading>Contact</Heading>

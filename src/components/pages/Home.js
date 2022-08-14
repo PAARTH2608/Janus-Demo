@@ -62,6 +62,9 @@ const HeadingOne = styled.h1`
   @media (max-width: 1200px) {
     font-size: 3rem;
   }
+  @media (max-width: 650px) {
+    font-size: 1.5rem;
+  }
 `;
 const HeadingTwo = styled.h2`
   color: #fff;
@@ -70,6 +73,9 @@ const HeadingTwo = styled.h2`
 
   @media (max-width: 1200px) {
     font-size: 1.6rem;
+  }
+  @media (max-width: 650px) {
+    font-size: 1rem;
   }
 `;
 
