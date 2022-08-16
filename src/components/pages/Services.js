@@ -36,6 +36,9 @@ const LeftDiv = styled.div`
     padding-top: 2rem;
     width: 100%;
   }
+  @media (max-width: 900px) {
+    margin-bottom: 3rem;
+  }
 `;
 const MediumText = styled.h3`
   color: #fff;
@@ -99,6 +102,7 @@ const Upper = styled.div`
   }
   @media (max-width: 650px) {
     margin: 1rem;
+    margin-bottom: 2rem;
   }
 `;
 const Lower = styled.div`
