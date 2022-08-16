@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Cards from "../page-components/Cards";
 
 const MainDiv = styled.div`
-  height: 145vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -12,12 +12,11 @@ const MainDiv = styled.div`
 
   @media (max-width: 900px) {
     margin-top: 3rem;
-    height: 110vh;
+    height: auto;
   }
   @media (max-width: 650px) {
     align-items: flex-start;
     padding-top: 2rem;
-    height: 200vh;
   }
 `;
 const MainHeading = styled.h1`
@@ -25,6 +24,7 @@ const MainHeading = styled.h1`
   font-size: 5rem;
   margin: 0;
   font-family: "Lora", sans-serif;
+  margin-bottom: 1rem;
 
   @media (max-width: 1200px) {
     font-size: 3rem;

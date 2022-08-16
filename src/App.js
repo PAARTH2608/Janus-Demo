@@ -4,14 +4,14 @@ import AboutUs from './components/pages/AboutUs';
 import Footer from './components/pages/Footer';
 import Home from './components/pages/Home';
 import Services from './components/pages/Services';
-import Technologies from './components/pages/Technologies';
+import Technology from './components/pages/Technology';
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Home />
-      <Technologies />
+      <Technology />
       <AboutUs />
       <Services />
       <Footer />

@@ -47,7 +47,7 @@ const MediumText = styled.h3`
   @media (max-width: 1200px) {
     font-size: 1.6rem;
   }
-  @media (max-width: 650px){
+  @media (max-width: 650px) {
     font-size: 1rem;
   }
 `;
@@ -59,7 +59,7 @@ const LargeText = styled.h1`
   @media (max-width: 1200px) {
     font-size: 3rem;
   }
-  @media (max-width: 650px){
+  @media (max-width: 650px) {
     font-size: 1.5rem;
   }
 `;
@@ -89,24 +89,33 @@ const Image = styled.img`
     width: 100%;
   }
 `;
+const Color = styled.span`
+  color: turquoise;
+`;
 
 const AboutUs = () => {
   return (
     <MainDiv>
       <LeftDiv>
-        <MediumText>Who We Are?</MediumText>
+        <MediumText>
+          <Color>Who We Are?</Color>
+        </MediumText>
         <LargeText>
-          We Have Qualified Powerful Team To Do It More Faster, Better & Smarter
+          We Have <Color>Qualified Powerful Team</Color> To Do It More Faster,
+          Better & Smarter
         </LargeText>
         <MediumText>
-          Here at Janus Softwares we have qualified team who have worked on
-          numerous technologies and frameworks and can provide you with top
-          notch service , be it an existing project or anew one, our team is
-          here to handle em all. We have worked on various technologies and have
-          provided our clients the best work they can think of, our team has the
-          best approach in finding solutions to various problems and creating
-          the art that may serve our clients and take their business to the next
-          level.
+          Here at <Color>Janus Softwares</Color> we have qualified team who have
+          worked on numerous technologies and frameworks and can provide you
+          with top notch service , be it an existing project or anew one, our
+          team is here to handle em all.{" "}
+          <Color>
+            We have worked on various technologies and have provided our clients
+            the best work they can think of
+          </Color>
+          , our team has the best approach in finding solutions to various
+          problems and creating the art that may serve our clients and take
+          their business to the next level.
         </MediumText>
       </LeftDiv>
       <RightDiv>

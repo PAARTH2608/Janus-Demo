@@ -11,14 +11,16 @@ const MediaCard = (props) => {
   }
   const styles1 = {
     backgroundColor: "#2b2b2b",
-    marginBottom: "2rem",
-    width: "48%",
+    height: "20vh",
+    width: "18%",
     margin: "0.5rem 0.5rem",
     "@media (max-width: 900px)": {
-      maxWidth: "49%",
+      width: "38%",
+      height: "10vh",
     },
     "@media (max-width: 650px)": {
       width: "45%",
+      height: "15vh",
     }
   }
   return (

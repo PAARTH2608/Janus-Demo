@@ -104,24 +104,29 @@ const P = styled.p`
 const Color = styled.span`
   color: turquoise;
 `;
+const ImageDiv = styled.div`
+  height: 70%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+
+  @media (max-width: 1200px) {
+    height: 80%;
+    width: 50%;
+  }
+  @media (max-width: 650px) {
+    height: 50%;
+    width: 65%;
+  }
+`;
+const ImageStyle = styled.img`
+  height: 100%;
+  width: 100%;
+`;
+
 const Footer = () => {
-  const styles = {
-    height: "150px",
-    width: "35%",
-    "@media (max-width: 650px)": {
-      height: "100px",
-      width: "100%",
-    },
-  };
-  const styles2 = {
-    "@media (max-width: 650px)": {
-      height: "100%",
-      width: "0%",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-    },
-  };
   const aStyle = {
     textDecoration: "none",
   };
@@ -129,9 +134,9 @@ const Footer = () => {
     <MainDiv>
       <Helper>
         <Left>
-          <div style={styles2}>
-            <img src={Image} style={styles} alt="img" />
-          </div>
+          <ImageDiv>
+            <ImageStyle src={Image} alt="img" />
+          </ImageDiv>
           Janus <Color>&nbsp;Softwares&nbsp;</Color> is a tech company with a
           mission to help companies extend their business with the help of
           technology. Founded in 2021, we have satisfied all our clients.
@@ -145,9 +150,9 @@ const Footer = () => {
             style={aStyle}
           >
             <P>
-              Address <BiMap /> - Registered Office – Janus Softwares – 104/105,
+              <Color>Address <BiMap /> - Registered Office – Janus Softwares – 104/105,
               A Wing, Manas Residency, Veer Savarkar Marg, Teen Petrol Pump,
-              Thane(W), Maharashtra, India – 400602
+              Thane(W), Maharashtra, India – 400602</Color>
             </P>
           </a>
           <Heading>Contact</Heading>
@@ -156,18 +161,18 @@ const Footer = () => {
           </P>
           <Span>
             <a href="https://wa.me/9029050299" target="_blank" rel="noreferrer">
-              <FaWhatsapp className="contact" size={26} color="white" />{" "}
+              <FaWhatsapp className="contact" size={26} color="turquoise" />{" "}
             </a>
             <a
               href="mailto: anil@aummetals.com"
               target="_blank"
               rel="noreferrer"
             >
-              <AiOutlineMail className="contact" size={26} color="white" />{" "}
+              <AiOutlineMail className="contact" size={26} color="turquoise" />{" "}
             </a>
             <a href="tel:+919029050299" target="_blank" rel="noreferrer">
               {" "}
-              <FiPhoneCall className="contact" size={26} color="white" />{" "}
+              <FiPhoneCall className="contact" size={26} color="turquoise" />{" "}
             </a>
           </Span>
         </Right>
