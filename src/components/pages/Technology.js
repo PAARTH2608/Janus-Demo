@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Cards from "../page-components/Cards";
+import { Color } from './Footer';
 
 const MainDiv = styled.div`
   height: 100vh;
@@ -17,6 +18,7 @@ const MainDiv = styled.div`
   @media (max-width: 650px) {
     align-items: flex-start;
     padding-top: 2rem;
+    height: 160vh;
   }
 `;
 const MainHeading = styled.h1`
@@ -68,8 +70,8 @@ const Technologies = () => {
       <MainHeading>Top Technologies We Work On</MainHeading>
       <Box>
         <Paragraph>
-          Providing you with the cutting edge solutions that the tech world has
-          to offer. Here are some of the latest tech that we thrive on .
+          Providing you with the cutting <Color>edge solutions</Color> that the tech world has
+          to offer. Here are some of the <Color>latest tech</Color> that we thrive on .
         </Paragraph>
       </Box>
       <Cards />

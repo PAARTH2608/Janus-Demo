@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import HomeSVG from "../../images/Home.svg";
+import { Color } from './Footer';
 
 const MainDiv = styled.div`
   height: 95vh;
@@ -83,7 +84,7 @@ const Home = () => {
   return (
     <MainDiv>
       <LeftDiv>
-        <HeadingOne>Trust.Flexibility.</HeadingOne>
+        <HeadingOne>Trust.<Color>Flexibility.</Color></HeadingOne>
         <HeadingOne>Communication.</HeadingOne>
         <HeadingTwo>
           We get projects done! Partnering with you, we build relationships to

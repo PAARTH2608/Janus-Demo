@@ -101,7 +101,7 @@ const P = styled.p`
     font-size: 0.8rem;
   }
 `;
-const Color = styled.span`
+export const Color = styled.span`
   color: turquoise;
 `;
 const ImageDiv = styled.div`

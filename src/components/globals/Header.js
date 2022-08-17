@@ -11,28 +11,21 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 import { Link } from "react-router-dom";
+import Image from "../../images/janus-softwares.png";
 
 const pages = ["Technology", "AboutUs", "Services"];
 
 const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
+  
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
   };
 
   const styles = {
@@ -99,7 +92,7 @@ const Header = () => {
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
                     <Link
-                      style={{ textDecoration: "none", color: "white" }}
+                      style={{ textDecoration: "none", color: "#1D1D1D" }}
                       to={`/${page}`}
                     >
                       {page}
@@ -142,6 +135,14 @@ const Header = () => {
                 </Link>
               </Button>
             ))}
+          </Box>
+
+          <Box sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}>
+            <Tooltip title="Janus Softwares">
+              <IconButton sx={{ p: 0 }}>
+                <Avatar alt="JS" src={Image} />
+              </IconButton>
+            </Tooltip>
           </Box>
         </Toolbar>
       </Container>

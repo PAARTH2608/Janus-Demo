@@ -15,12 +15,12 @@ const MediaCard = (props) => {
     width: "18%",
     margin: "0.5rem 0.5rem",
     "@media (max-width: 900px)": {
-      width: "38%",
-      height: "10vh",
+      width: "28%",
+      height: "12vh",
     },
     "@media (max-width: 650px)": {
       width: "45%",
-      height: "15vh",
+      height: "17vh",
     }
   }
   return (
