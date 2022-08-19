@@ -93,9 +93,9 @@ const Color = styled.span`
   color: turquoise;
 `;
 
-const AboutUs = () => {
+const AboutUs = props => {
   return (
-    <MainDiv>
+    <MainDiv ref={props.aboutRef} >
       <LeftDiv>
         <MediumText>
           <Color>Who We Are?</Color>

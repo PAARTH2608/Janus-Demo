@@ -80,9 +80,10 @@ const HeadingTwo = styled.h2`
   }
 `;
 
-const Home = () => {
+const Home = props => {
+
   return (
-    <MainDiv>
+    <MainDiv ref={props.homeRef} >
       <LeftDiv>
         <HeadingOne>Trust.<Color>Flexibility.</Color></HeadingOne>
         <HeadingOne>Communication.</HeadingOne>

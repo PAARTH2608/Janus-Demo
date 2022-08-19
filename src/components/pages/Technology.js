@@ -64,9 +64,9 @@ const Paragraph = styled.p`
   }
 `;
 
-const Technologies = () => {
+const Technologies = props => {
   return (
-    <MainDiv>
+    <MainDiv ref={props.techRef} >
       <MainHeading>Top Technologies We Work On</MainHeading>
       <Box>
         <Paragraph>

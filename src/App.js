@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import './App.css';
 import Header from './components/globals/Header';
 import AboutUs from './components/pages/AboutUs';
@@ -7,13 +8,31 @@ import Services from './components/pages/Services';
 import Technology from './components/pages/Technology';
 
 function App() {
+  const homeRef = useRef();
+  const techRef  = useRef();
+  const aboutRef = useRef();
+  const servicesRef = useRef();
+
   return (
     <div className="App">
-      <Header />
-      <Home />
-      <Technology />
-      <AboutUs />
-      <Services />
+      <Header
+        homeRef={homeRef}
+        techRef={techRef}
+        aboutRef={aboutRef}
+        servicesRef={servicesRef}
+      />
+      <Home 
+        homeRef={homeRef}
+      />
+      <Technology 
+        techRef={techRef}
+      />
+      <AboutUs 
+        aboutRef={aboutRef}
+      />
+      <Services 
+        servicesRef={servicesRef}
+      />
       <Footer />
     </div>
   );

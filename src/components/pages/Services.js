@@ -119,9 +119,9 @@ const Lower = styled.div`
   }
 `;
 
-const Services = () => {
+const Services = props => {
   return (
-    <MainDiv>
+    <MainDiv ref={props.servicesRef} >
       <LeftDiv>
         <MediumText>Why Choose Us?</MediumText>
         <LargeText>Make Work Productive & Get Faster Solution</LargeText>

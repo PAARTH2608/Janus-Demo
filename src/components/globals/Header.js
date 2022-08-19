@@ -11,18 +11,21 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import { Link } from "react-router-dom";
 import Image from "../../images/janus-softwares.png";
 
-const pages = ["Technology", "AboutUs", "Services"];
-
-const Header = () => {
+const Header = (props) => {
+  console.log(props);
+  const pages = [
+    { name: "Home", reference: props.homeRef },
+    { name: "Technology", reference: props.techRef },
+    { name: "AboutUs", reference: props.aboutRef },
+    { name: "Services", reference: props.servicesRef },
+  ];
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
@@ -32,9 +35,11 @@ const Header = () => {
     color: "turquoise",
   };
 
+  const executeScroll = (reference) => reference.current.scrollIntoView({ behavior: "smooth" });
+
   return (
     <AppBar
-      position="static"
+      position="fixed"
       sx={{
         backgroundColor: "#2b2b2b",
       }}
@@ -89,15 +94,12 @@ const Header = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">
-                    <Link
-                      style={{ textDecoration: "none", color: "#1D1D1D" }}
-                      to={`/${page}`}
-                    >
-                      {page}
-                    </Link>
-                  </Typography>
+                <MenuItem
+                  key={page.name}
+                  // onClick={handleCloseNavMenu}
+                  onClick={() => executeScroll(page.reference)}
+                >
+                  <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -123,16 +125,12 @@ const Header = () => {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
-                key={page}
-                onClick={handleCloseNavMenu}
+                key={page.handleOpenNavMenu}
+                // onClick={handleCloseNavMenu}
+                onClick={() => executeScroll(page.reference)}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                <Link
-                  style={{ textDecoration: "none", color: "white" }}
-                  to={`/${page}`}
-                >
-                  {page}
-                </Link>
+                {page.name}
               </Button>
             ))}
           </Box>
