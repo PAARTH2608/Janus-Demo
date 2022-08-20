@@ -11,7 +11,7 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import Image from "../../images/janus-softwares.png";
+import Image from "../../images/Janus_Logo.png";
 
 const Header = (props) => {
   console.log(props);
