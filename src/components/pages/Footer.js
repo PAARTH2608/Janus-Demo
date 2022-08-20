@@ -160,11 +160,11 @@ const Footer = () => {
             Anurag Baheti - <Color>CEO</Color>
           </P>
           <Span>
-            <a href="https://wa.me/9029050299" target="_blank" rel="noreferrer">
+            <a href="https://wa.me/+919029050299" target="_blank" rel="noreferrer">
               <FaWhatsapp className="contact" size={26} color="turquoise" />{" "}
             </a>
             <a
-              href="mailto: anil@aummetals.com"
+              href="mailto: janus.softwares@gmail.com"
               target="_blank"
               rel="noreferrer"
             >

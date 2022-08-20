@@ -18,7 +18,7 @@ const Header = (props) => {
   const pages = [
     { name: "Home", reference: props.homeRef },
     { name: "Technology", reference: props.techRef },
-    { name: "AboutUs", reference: props.aboutRef },
+    { name: "About Us", reference: props.aboutRef },
     { name: "Services", reference: props.servicesRef },
   ];
   const [anchorElNav, setAnchorElNav] = React.useState(null);
