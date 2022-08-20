@@ -9,6 +9,7 @@ const Service = props => {
   return (
     <Card sx={{ maxWidth: 345,
     backgroundColor: '#2b2b2b',
+    margin: "1.5rem 1rem",
     color: '#fff',
     "@media (max-width: 650px)": {
       width: '100%',

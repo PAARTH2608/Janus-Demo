@@ -11,6 +11,7 @@ const MainDiv = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding-top: 2rem;
 
   @media (max-width: 900px) {
     flex-direction: column;
@@ -96,6 +97,7 @@ const Upper = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 1rem;
 
   @media (max-width: 1200px) {
     height: 10vh;

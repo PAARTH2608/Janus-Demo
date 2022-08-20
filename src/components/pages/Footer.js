@@ -4,7 +4,7 @@ import { FiPhoneCall } from "react-icons/fi";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaWhatsapp } from "react-icons/fa";
 import { BiMap } from "react-icons/bi";
-import Image from "../../images/janus-softwares.png";
+import Image from "../../images/Janus_Logo.png";
 
 const MainDiv = styled.div`
   height: 55vh;
@@ -122,16 +122,16 @@ const ImageDiv = styled.div`
   }
 `;
 const ImageStyle = styled.img`
-  height: 100%;
-  width: 100%;
+  height: 70%;
+  width: 70%;
 `;
 
-const Footer = () => {
+const Footer = props => {
   const aStyle = {
     textDecoration: "none",
   };
   return (
-    <MainDiv>
+    <MainDiv ref={props.aboutUsRef} >
       <Helper>
         <Left>
           <ImageDiv>

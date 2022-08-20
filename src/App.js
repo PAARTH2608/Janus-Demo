@@ -12,6 +12,7 @@ function App() {
   const techRef  = useRef();
   const aboutRef = useRef();
   const servicesRef = useRef();
+  const aboutUsRef = useRef();
 
   return (
     <div className="App">
@@ -20,6 +21,7 @@ function App() {
         techRef={techRef}
         aboutRef={aboutRef}
         servicesRef={servicesRef}
+        aboutUsRef={aboutUsRef}
       />
       <Home 
         homeRef={homeRef}
@@ -33,7 +35,9 @@ function App() {
       <Services 
         servicesRef={servicesRef}
       />
-      <Footer />
+      <Footer 
+        aboutUsRef={aboutUsRef}
+      />
     </div>
   );
 }
