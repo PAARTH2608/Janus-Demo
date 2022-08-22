@@ -122,8 +122,14 @@ const ImageDiv = styled.div`
   }
 `;
 const ImageStyle = styled.img`
-  height: 70%;
-  width: 70%;
+  height: 90%;
+  width: 100%;
+  
+  @media (max-width: 900px) {
+    height: 90%;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 `;
 
 const Footer = props => {

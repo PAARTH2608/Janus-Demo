@@ -14,13 +14,12 @@ import MenuItem from "@mui/material/MenuItem";
 import Image from "../../images/Janus_Logo.png";
 
 const Header = (props) => {
-  console.log(props);
   const pages = [
     { name: "Home", reference: props.homeRef },
     { name: "Technology", reference: props.techRef },
     { name: "About Us", reference: props.aboutRef },
     { name: "Services", reference: props.servicesRef },
-    { name: "Contact Us", reference: props.aboutUsRef }
+    { name: "Contact Us", reference: props.aboutUsRef },
   ];
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
@@ -36,7 +35,9 @@ const Header = (props) => {
     color: "turquoise",
   };
 
-  const executeScroll = (reference) => reference.current.scrollIntoView({ behavior: "smooth" });
+  const executeScroll = (reference) => {
+    reference.current.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <AppBar
@@ -98,7 +99,7 @@ const Header = (props) => {
                 <MenuItem
                   key={page.name}
                   // onClick={handleCloseNavMenu}
-                  onClick={() => executeScroll(page.reference)}
+                  onClick={() => {executeScroll(page.reference);}}
                 >
                   <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
@@ -128,7 +129,7 @@ const Header = (props) => {
               <Button
                 key={page.handleOpenNavMenu}
                 // onClick={handleCloseNavMenu}
-                onClick={() => executeScroll(page.reference)}
+                onClick={() => {executeScroll(page.reference);}}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
                 {page.name}

@@ -14,6 +14,9 @@ const MainDiv = styled.div`
     align-items: center;
     justify-content: center;
   }
+  @media (max-width: 600px) {
+    margin-top: 2.5rem;
+  }
 `;
 const LeftDiv = styled.div`
   height: 100vh;

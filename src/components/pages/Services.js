@@ -3,7 +3,7 @@ import styled from "styled-components";
 import ServiceSVG from "../../images/Services.svg";
 import Service from "../page-components/Service";
 import Data from "../page-components/ServiceData";
-
+import { Color } from "./Footer";
 const MainDiv = styled.div`
   height: 100vh;
   width: 100%;
@@ -125,7 +125,7 @@ const Services = props => {
   return (
     <MainDiv ref={props.servicesRef} >
       <LeftDiv>
-        <MediumText>Why Choose Us?</MediumText>
+        <MediumText><Color>Why Choose Us?</Color></MediumText>
         <LargeText>Make Work Productive & Get Faster Solution</LargeText>
         <Image src={ServiceSVG} />
       </LeftDiv>
