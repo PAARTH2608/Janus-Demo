@@ -37,6 +37,9 @@ const Header = (props) => {
 
   const executeScroll = (reference) => {
     reference.current.scrollIntoView({ behavior: "smooth" });
+    setTimeout(() => {
+      handleCloseNavMenu();
+    }, 800);
   };
 
   return (
